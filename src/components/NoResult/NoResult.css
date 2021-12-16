@@ -1,0 +1,21 @@
+.no-result {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.no-result span {
+  cursor: default;
+  font-size: 500px;
+  background: linear-gradient(
+    49.73deg,
+    rgba(0, 25, 255, 0.27) 27.63%,
+    rgba(205, 31, 31, 0.27) 73.88%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}

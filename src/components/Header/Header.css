@@ -1,0 +1,101 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header .menu-icon {
+  cursor: pointer;
+  z-index: 1;
+}
+.header .rhs {
+  display: flex;
+  align-items: center;
+  text-decoration: italic;
+  font-weight: 600;
+}
+.header .date {
+  margin-right: 10px;
+  font-style: italic;
+}
+/* .header .font-type {
+  width: 130px;
+  height: 31px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+
+  background: linear-gradient(
+    89.1deg,
+    rgba(69, 46, 210, 0.456) 0%,
+    rgba(199, 95, 95, 0.456) 100%
+  );
+  border-radius: 10px;
+} */
+.header .circle {
+  cursor: pointer;
+  margin-right: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(199, 95, 95, 0.456) 0%,
+    rgba(0, 26, 255, 0.228) 100%
+  );
+}
+/* .header .circle.bold {
+  font-weight: 800;
+}
+.header .circle.italic {
+  font-style: italic;
+}
+.header .circle.underline {
+  text-decoration: underline;
+} */
+.header .add-img {
+  height: 16px;
+}
+/* .header .color-picker {
+  cursor: pointer;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  margin-right: 5px;
+
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    rgba(255, 0, 0, 0.6) 0deg,
+    rgba(247, 105, 0, 0.6) 31.88deg,
+    rgba(235, 255, 0, 0.6) 90deg,
+    rgba(36, 255, 0, 0.6) 150.36deg,
+    rgba(0, 209, 255, 0.6) 204.74deg,
+    rgba(0, 26, 255, 0.6) 262.86deg,
+    rgba(255, 0, 245, 0.6) 326.25deg,
+    rgba(255, 0, 0, 0.6) 360deg
+  );
+  box-shadow: inset 0px 0px 5px 2px rgba(0, 0, 0, 0.25);
+} */
+/* date picker */
+.header .react-datepicker-wrapper {
+  width: unset;
+}
+.header .react-datepicker-wrapper button {
+  outline: none;
+  border: none;
+  font-weight: 600;
+  color: var(--white);
+  border-radius: 6px;
+  padding: 6px;
+  background: linear-gradient(
+    49.73deg,
+    rgba(0, 25, 255, 0.27) 27.63%,
+    rgba(205, 31, 31, 0.27) 73.88%
+  );
+}

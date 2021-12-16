@@ -1,0 +1,42 @@
+.card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  width: 302px;
+  height: 261px;
+  padding: 10px;
+  box-sizing: border-box;
+
+  background: linear-gradient(
+    49.73deg,
+    rgba(0, 25, 255, 0.27) 27.63%,
+    rgba(205, 31, 31, 0.27) 73.88%
+  );
+  box-shadow: inset 0px 0px 100px 10px rgba(0, 26, 255, 0.24);
+  border-radius: 22px;
+  border: 2px solid;
+  /* border-image-source: conic-gradient(
+    from 180deg at 50% 50%,
+    #001aff 0deg,
+    #cd1f1f 238.12deg,
+    #001aff 360deg
+  ); */
+
+  font-style: italic;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: var(--white);
+}
+.card .date {
+  align-self: flex-end;
+}
+.card .text {
+  overflow: hidden;
+  margin-top: 5px;
+  text-overflow: ellipsis;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 9;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}

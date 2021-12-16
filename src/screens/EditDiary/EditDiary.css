@@ -1,0 +1,16 @@
+.edit-diary {
+  display: flex;
+  flex-direction: column;
+}
+.edit-diary .container {
+  margin-top: 20px;
+}
+/* card */
+.edit-diary .container .card {
+  cursor: unset;
+  width: 100%;
+  height: calc(100vh - 71px);
+}
+.edit-diary .container .card .text {
+  margin-top: 15px;
+}

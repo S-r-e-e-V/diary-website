@@ -1,0 +1,21 @@
+.search-bar input {
+  outline: none;
+  border: none;
+  padding: 0 10px;
+  width: 236px;
+  height: 31px;
+  background: linear-gradient(
+    89.1deg,
+    rgba(69, 46, 210, 0.456) 0%,
+    rgba(199, 95, 95, 0.456) 100%
+  );
+  border-radius: 45px;
+}
+.search-bar input::placeholder,
+.search-bar input {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: var(--white);
+}
