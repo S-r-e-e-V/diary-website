@@ -42,7 +42,7 @@ export default function Home() {
     };
     const response = await postData(`/diary/list`, payload);
     setloading(false);
-    setdiary(response);
+    if (response) setdiary(response);
   };
   useEffect(() => {
     postDiary();

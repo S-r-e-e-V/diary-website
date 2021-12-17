@@ -13,8 +13,8 @@
     rgba(205, 31, 31, 0.27) 73.88%
   );
   box-shadow: inset 0px 0px 100px 10px rgba(0, 26, 255, 0.24);
-  border-radius: 22px;
-  border: 2px solid;
+  border-radius: 10px;
+  border: 1px solid;
   /* border-image-source: conic-gradient(
     from 180deg at 50% 50%,
     #001aff 0deg,

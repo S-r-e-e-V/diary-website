@@ -7,6 +7,9 @@ import { useNavigate } from "react-router";
 import { AppContext } from "../../context/AppContext";
 import { AuthContext } from "../../context/AuthContext";
 
+// api call
+import { logout } from "../../api";
+
 export default function Menu() {
   const navigate = useNavigate();
 
@@ -25,7 +28,7 @@ export default function Menu() {
       </span>
       <span
         onClick={() => {
-          localStorage.removeItem("access_token");
+          logout();
           setisAuthenticated(false);
           setisopenMenu(false);
         }}

@@ -8,7 +8,7 @@ import "react-quill/dist/quill.snow.css";
 // import "react-quill/dist/quill.bubble.css";
 import EditorToolbar, { modules, formats } from "../../utils/EditorToolbar.js";
 
-import { useLocation } from "react-router";
+import { useLocation, useNavigate } from "react-router";
 
 // api calls
 import { postData, getData, putData } from "../../api";
@@ -22,6 +22,7 @@ import getHighlightedText from "../../utils/HighlightedText";
 import moment from "moment";
 
 export default function AddDiary() {
+  const navigator = useNavigate();
   const search = useLocation().search;
   const type = new URLSearchParams(search).get("type");
   const id = type === "edit" ? new URLSearchParams(search).get("id") : null;
@@ -40,10 +41,12 @@ export default function AddDiary() {
     setloading(true);
     const response = await getData(`/diary/${id}`);
     setloading(false);
-    console.log(response);
-    setdiary(response);
-    setbody(response?.content);
-    settext(response?.content);
+    if (response) {
+      console.log(response);
+      setdiary(response);
+      setbody(response?.content);
+      settext(response?.content);
+    }
   };
 
   // add diary
@@ -62,6 +65,7 @@ export default function AddDiary() {
         content: body,
       };
       const response = await postData(`/diary/new`, payload);
+      if (response) navigator("/");
     }
     setloading(false);
   };

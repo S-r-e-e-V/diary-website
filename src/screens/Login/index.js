@@ -56,6 +56,9 @@ export default function Login() {
           Login
         </button>
       </form>
+      <div className="signup-section" onClick={() => navigate("/signup")}>
+        Signup
+      </div>
     </div>
   );
 }

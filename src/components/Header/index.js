@@ -38,7 +38,7 @@ export default function Header({
   return (
     <div className="header">
       <img
-        src={Images.menu_icon}
+        src={isopenMenu ? Images.close_icon : Images.menu_icon}
         className="menu-icon"
         onClick={() => setisopenMenu(!isopenMenu)}
       />
@@ -50,7 +50,7 @@ export default function Header({
       {page === "edit" && (
         <div className="rhs">
           <div className="circle" onClick={edit}>
-            Edit
+            <img src={Images.edit_icon} />
           </div>
           {/* <Search placeholder="Search..." onSearch={onSearch} /> */}
         </div>

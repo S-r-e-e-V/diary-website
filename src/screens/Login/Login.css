@@ -1,6 +1,7 @@
 .login {
   margin-top: 20%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -8,7 +9,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3% 5%;
+  padding: 3% 3%;
 
   box-sizing: border-box;
   background: rgba(225, 255, 255, 0.06);
@@ -27,7 +28,7 @@
   outline: none;
   border: none;
   padding: 0 10px;
-  width: 250px;
+  width: 300px;
   height: 30px;
   background: linear-gradient(
     89.1deg,
@@ -76,4 +77,35 @@
 
 .login .login-container input::placeholder {
   color: var(--white);
+}
+
+.login .signup-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+
+  width: 300px;
+  padding: 10px 3%;
+  margin-top: 30px;
+
+  /* box-sizing: border-box; */
+  color: var(--lightBlack);
+  /* background: rgba(225, 255, 255, 0.06); */
+  background: linear-gradient(
+    89.1deg,
+    rgba(69, 46, 210, 0.1) 0%,
+    rgba(199, 95, 95, 0.1) 100%
+  );
+  border-left: 1px solid rgba(225, 255, 255, 0.3);
+  border-top: 1px solid rgba(225, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+  border-radius: 22px;
+
+  transition: all 0.2s ease-in-out;
+}
+.login .signup-section:hover {
+  background: #ffffff4d;
 }

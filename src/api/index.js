@@ -125,10 +125,6 @@ const login = async (path, data) => {
 
   if (response && response.data && response.status === 200) {
     return response.data;
-  } else if (response && response.status && response.status === 400) {
-    return response;
-  } else if (response && response.status && response.status === 500) {
-    return response;
   } else {
     return response;
   }
@@ -136,7 +132,7 @@ const login = async (path, data) => {
 
 const logout = () => {
   localStorage.removeItem("access_token");
-  window.location.reload();
+  window.location.href = "/";
 };
 
 // GET method API function
@@ -146,10 +142,6 @@ const getData = async (path) => {
   let response = await instance.get(path, header).catch(handleError);
   if (response && response.data && response.status && response.status === 200) {
     return response.data;
-  } else if (response && response.status && response.status === 400) {
-    return response;
-  } else if (response && response.status && response.status === 500) {
-    return response;
   } else {
     return null;
   }
@@ -162,10 +154,6 @@ const putData = async (path, data) => {
   let response = await instance.put(path, data, header).catch(handleError);
   if (response && response.data && response.status === 200) {
     return response.data;
-  } else if (response && response.status && response.status === 400) {
-    return response;
-  } else if (response && response.status && response.status === 500) {
-    return response;
   } else {
     return null;
   }
@@ -179,10 +167,6 @@ const postData = async (path, data) => {
 
   if (response && response.data && response.status === 200) {
     return response.data;
-  } else if (response && response.status && response.status === 400) {
-    return response;
-  } else if (response && response.status && response.status === 500) {
-    return response;
   } else {
     return null;
   }

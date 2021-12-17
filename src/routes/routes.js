@@ -28,7 +28,7 @@ export default function Router() {
       ) : (
         <Routes>
           <Route exact path="/signup" element={<Signup />} />
-          <Route exact path="/" element={<Login />} />
+          <Route path="*" element={<Login />} />
         </Routes>
       )}
     </BrowserRouter>

@@ -13,7 +13,7 @@ import { login } from "../../api";
 import RingLoading from "../../components/RingLoading";
 
 export default function Signup() {
-  //   const navigate = useNavigate();
+  const navigate = useNavigate();
   //   const { setisAuthenticated } = useContext(AuthContext);
 
   const [credentials, setcredentials] = useState({
@@ -33,6 +33,7 @@ export default function Signup() {
     };
     const response = await login(`/signup`, payload);
     if (response) {
+      navigator("/");
     }
     setloading(false);
   };
