@@ -12,6 +12,16 @@
   text-decoration: italic;
   font-weight: 600;
 }
+.header .save {
+  padding: 3px 7px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background: linear-gradient(
+    49.73deg,
+    rgba(0, 25, 255, 0.27) 27.63%,
+    rgba(205, 31, 31, 0.27) 73.88%
+  );
+}
 .header .date {
   margin-right: 10px;
   font-style: italic;

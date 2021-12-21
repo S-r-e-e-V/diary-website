@@ -8,7 +8,7 @@ export default function Card({ id, date, text }) {
   return (
     <div
       className="card"
-      onClick={() => id && navigate(`/modify?type=edit&&id=${id}`)}
+      onClick={() => id && navigate(`/modify?type=edit&id=${id}`)}
     >
       <span className="date">{date}</span>
       <span className="text" dangerouslySetInnerHTML={{ __html: text }}></span>

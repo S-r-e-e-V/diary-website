@@ -2,7 +2,7 @@
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  width: 302px;
+  width: 100%;
   height: 261px;
   padding: 10px;
   box-sizing: border-box;
@@ -14,13 +14,6 @@
   );
   box-shadow: inset 0px 0px 100px 10px rgba(0, 26, 255, 0.24);
   border-radius: 10px;
-  border: 1px solid;
-  /* border-image-source: conic-gradient(
-    from 180deg at 50% 50%,
-    #001aff 0deg,
-    #cd1f1f 238.12deg,
-    #001aff 360deg
-  ); */
 
   font-style: italic;
   font-weight: 500;
@@ -39,4 +32,18 @@
   -webkit-line-clamp: 9;
   -webkit-box-orient: vertical;
   white-space: normal;
+}
+@media screen and (max-width: 1000px) {
+  .card {
+    height: 200px;
+  }
+  .card .text p {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .card {
+    width: 100%;
+    height: 161px;
+  }
 }

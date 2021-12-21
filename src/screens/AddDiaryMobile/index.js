@@ -1,10 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
-import "./AddDiary.css";
+import "./AddDiaryMobile.css";
 
 // text editor
 import ReactQuill from "react-quill";
 // import "react-quill/dist/quill.core.css";
-import "react-quill/dist/quill.snow.css";
+import "react-quill/dist/quill.bubble.css";
 import EditorToolbar, { modules, formats } from "../../utils/EditorToolbar.js";
 
 import { useLocation, useNavigate } from "react-router";
@@ -20,7 +20,7 @@ import RingLoading from "../../components/RingLoading";
 import getHighlightedText from "../../utils/HighlightedText";
 import moment from "moment";
 
-export default function AddDiary() {
+export default function AddDiaryMobile() {
   const navigator = useNavigate();
   const search = useLocation().search;
   const type = new URLSearchParams(search).get("type");
@@ -93,15 +93,16 @@ export default function AddDiary() {
   // };
   // console.log(body);
   return (
-    <div className="add-diary">
+    <div className="add-diary-mobile">
       <RingLoading loading={loading} />
       <Header
-        page={isHideTools ? "edit" : "add"}
+        page={isHideTools ? "edit" : "add-mobile"}
+        save={Save}
         date={moment(diary?.date).format("YYYY-MM-DD")}
         edit={() => setisHideTools(false)}
         onSearch={onSearch}
       />
-      <EditorToolbar Save={Save} isHideTools={isHideTools} />
+      <EditorToolbar isHideTools={isHideTools} />
       <div className="container">
         {/* <div
           className="textarea"
@@ -118,7 +119,7 @@ export default function AddDiary() {
           onChange={(e) => setbody(e)}
           modules={modules}
           // formats={formats}
-          theme={"snow"}
+          theme={"bubble"}
         />
       </div>
     </div>

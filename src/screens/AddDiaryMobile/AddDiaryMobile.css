@@ -1,11 +1,11 @@
-.add-diary {
+.add-diary-mobile {
   display: flex;
   flex-direction: column;
 }
-.add-diary .container {
+.add-diary-mobile .container {
   margin-top: 20px;
 }
-.add-diary .container .textarea {
+.add-diary-mobile .container .textarea {
   width: 100%;
   height: calc(100vh - 75px);
   box-sizing: border-box;
@@ -28,14 +28,14 @@
   color: var(--white);
 }
 /* toolbar */
-.add-diary .ql-toolbar {
+/* .add-diary-mobile .ql-toolbar {
   border: none !important;
 }
-.add-diary .ql-toolbar .ql-formats span {
+.add-diary-mobile .ql-toolbar .ql-formats span {
   outline: none;
   border: none;
 }
-.add-diary .ql-toolbar .ql-formats > span {
+.add-diary-mobile .ql-toolbar .ql-formats > span {
   outline: none;
   border: none;
   margin: 5px;
@@ -46,19 +46,10 @@
   );
   border-radius: 10px;
 }
-.add-diary .ql-toolbar .ql-save {
-  padding: 3px 10px;
-  background: linear-gradient(
-    89.1deg,
-    rgba(69, 46, 210, 0.456) 0%,
-    rgba(199, 95, 95, 0.456) 100%
-  );
-  border-radius: 10px;
-}
-.add-diary .ql-toolbar .ql-formats > button,
-.add-diary .ql-toolbar .ql-formats .ql-align,
-.add-diary .ql-toolbar .ql-formats .ql-color,
-.add-diary .ql-toolbar .ql-formats .ql-background {
+.add-diary-mobile .ql-toolbar .ql-formats > button,
+.add-diary-mobile .ql-toolbar .ql-formats .ql-align,
+.add-diary-mobile .ql-toolbar .ql-formats .ql-color,
+.add-diary-mobile .ql-toolbar .ql-formats .ql-background {
   width: 31px;
   height: 31px;
   margin: 5px;
@@ -72,17 +63,20 @@
     rgba(199, 95, 95, 0.456) 0%,
     rgba(0, 26, 255, 0.228) 100%
   );
-}
-.add-diary .ql-toolbar .ql-formats svg > * {
+} */
+.add-diary-mobile .ql-toolbar .ql-formats svg > * {
   /* stroke: var(--white) !important; */
   /* fill: var(--white) !important; */
 }
-.add-diary .ql-toolbar .ql-formats button:hover svg > * {
+.add-diary-mobile .ql-toolbar .ql-formats button:hover svg > * {
   /* stroke: var(--blue); */
 }
 
+.add-diary-mobile .ql-toolbar .ql-save {
+  display: none;
+}
 /* react-quill */
-.add-diary .container .ql-container {
+.add-diary-mobile .container .ql-container {
   height: calc(100vh - 132px);
   outline: none;
 

@@ -30,7 +30,6 @@ export default function Home() {
     startDate: startDate,
     endDate: new Date(),
   });
-  console.log(date);
   // get diary 📔
   const postDiary = async () => {
     setloading(true);
@@ -65,14 +64,11 @@ export default function Home() {
       />
       <div className="cards">
         {diary?.list?.map((item, index) => (
-          <div key={index}>
-            {/* <Card date={item.date} text={text[index]} /> */}
-            <Card
-              id={item._id}
-              date={moment(item.date).format("YYYY-MM-DD")}
-              text={item.content}
-            />
-          </div>
+          <Card
+            id={item._id}
+            date={moment(item.date).format("YYYY-MM-DD")}
+            text={item.content}
+          />
         ))}
       </div>
     </div>

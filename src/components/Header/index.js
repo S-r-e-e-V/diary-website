@@ -22,6 +22,7 @@ export default function Header({
   edit,
   setDate,
   selectedDate,
+  save,
 }) {
   const navigate = useNavigate();
   const { isopenMenu, setisopenMenu } = useContext(AppContext);
@@ -44,6 +45,14 @@ export default function Header({
       />
       {page === "add" && (
         <div className="rhs">
+          <div className="date">{date}</div>
+        </div>
+      )}
+      {page === "add-mobile" && (
+        <div className="rhs">
+          <span onClick={save} className="save">
+            Save
+          </span>
           <div className="date">{date}</div>
         </div>
       )}

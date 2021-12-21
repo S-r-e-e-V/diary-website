@@ -119,27 +119,20 @@ const handleError = (error) => {
   }
 };
 
-// login
-const login = async (path, data) => {
-  let response = await instance.post(path, data).catch(handleError);
-
-  if (response && response.data && response.status === 200) {
-    return response.data;
-  } else {
-    return response;
-  }
-};
-
 const logout = () => {
   localStorage.removeItem("access_token");
   window.location.href = "/";
 };
 
 // GET method API function
-const getData = async (path) => {
+const getData = async (path, isheader = true) => {
   let header = REQUEST_HEADER(getAccessToken());
 
-  let response = await instance.get(path, header).catch(handleError);
+  let response = null;
+  isheader
+    ? (response = await instance.get(path, header).catch(handleError))
+    : (response = await instance.get(path).catch(handleError));
+
   if (response && response.data && response.status && response.status === 200) {
     return response.data;
   } else {
@@ -148,10 +141,14 @@ const getData = async (path) => {
 };
 
 // PUT method API function
-const putData = async (path, data) => {
+const putData = async (path, data, isheader = true) => {
   let header = REQUEST_HEADER(getAccessToken());
 
-  let response = await instance.put(path, data, header).catch(handleError);
+  let response = null;
+  isheader
+    ? (response = await instance.put(path, data, header).catch(handleError))
+    : (response = await instance.put(path, data).catch(handleError));
+
   if (response && response.data && response.status === 200) {
     return response.data;
   } else {
@@ -160,10 +157,13 @@ const putData = async (path, data) => {
 };
 
 // POST method API function
-const postData = async (path, data) => {
+const postData = async (path, data, isheader = true) => {
   let header = REQUEST_HEADER(getAccessToken());
 
-  let response = await instance.post(path, data, header).catch(handleError);
+  let response = null;
+  isheader
+    ? (response = await instance.post(path, data, header).catch(handleError))
+    : (response = await instance.post(path, data).catch(handleError));
 
   if (response && response.data && response.status === 200) {
     return response.data;
@@ -172,4 +172,4 @@ const postData = async (path, data) => {
   }
 };
 
-export { getData, putData, postData, login, logout };
+export { getData, putData, postData, logout };

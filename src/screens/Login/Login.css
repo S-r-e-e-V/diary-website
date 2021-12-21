@@ -20,11 +20,16 @@
   box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
   border-radius: 22px;
 }
-.login .login-container > input,
+.login .login-container .input-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 10px 0;
+}
 .login .login-container > button {
   margin: 10px 0;
 }
-.login .login-container input {
+.login .login-container .input {
   outline: none;
   border: none;
   padding: 0 10px;
@@ -39,7 +44,18 @@
   border-radius: 45px;
   transition: all 0.2s ease-in-out;
 }
-.login .login-container span {
+.login .login-container .input.input-error {
+  border: 1px solid var(--red);
+}
+.login .login-container .error {
+  position: absolute;
+  top: 35px;
+  color: var(--red);
+  font-size: 9px;
+  margin-left: 3px;
+  align-self: flex-start;
+}
+.login .login-container .forgot-password-text {
   cursor: pointer;
   align-self: flex-end;
   font-size: 12px;
@@ -108,4 +124,21 @@
 }
 .login .signup-section:hover {
   background: #ffffff4d;
+}
+
+@media screen and (max-width: 600px) {
+  .login .login-container .input {
+    width: 250px;
+  }
+  .login .signup-section {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .login .login-container .input {
+    width: 200px;
+  }
+  .login .signup-section {
+    width: 200px;
+  }
 }

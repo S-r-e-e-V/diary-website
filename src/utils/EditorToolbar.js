@@ -156,7 +156,11 @@ export const QuillToolbar = ({ Save, isHideTools }) => (
         <CustomRedo />
       </button>
     </span>
-    <span style={{ cursor: "pointer", color: "black" }} onClick={Save}>
+    <span
+      className="ql-save"
+      style={{ cursor: "pointer", color: "black" }}
+      onClick={Save}
+    >
       Save
     </span>
   </div>
