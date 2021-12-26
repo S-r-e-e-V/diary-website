@@ -14,10 +14,10 @@
 
   background: linear-gradient(
     49.73deg,
-    rgba(0, 25, 255, 0.27) 27.63%,
-    rgba(205, 31, 31, 0.27) 73.88%
+    var(--blue_03) 27.63%,
+    var(--red_03) 73.88%
   );
-  box-shadow: inset 0px 0px 100px 10px rgba(0, 26, 255, 0.24);
+  box-shadow: inset 0px 0px 100px 10px var(--blue_03);
   border-radius: 22px;
   border: 2px solid;
 
@@ -28,42 +28,6 @@
   color: var(--white);
 }
 /* toolbar */
-/* .add-diary-mobile .ql-toolbar {
-  border: none !important;
-}
-.add-diary-mobile .ql-toolbar .ql-formats span {
-  outline: none;
-  border: none;
-}
-.add-diary-mobile .ql-toolbar .ql-formats > span {
-  outline: none;
-  border: none;
-  margin: 5px;
-  background: linear-gradient(
-    89.1deg,
-    rgba(69, 46, 210, 0.456) 0%,
-    rgba(199, 95, 95, 0.456) 100%
-  );
-  border-radius: 10px;
-}
-.add-diary-mobile .ql-toolbar .ql-formats > button,
-.add-diary-mobile .ql-toolbar .ql-formats .ql-align,
-.add-diary-mobile .ql-toolbar .ql-formats .ql-color,
-.add-diary-mobile .ql-toolbar .ql-formats .ql-background {
-  width: 31px;
-  height: 31px;
-  margin: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgba(199, 95, 95, 0.456) 0%,
-    rgba(0, 26, 255, 0.228) 100%
-  );
-} */
 .add-diary-mobile .ql-toolbar .ql-formats svg > * {
   /* stroke: var(--white) !important; */
   /* fill: var(--white) !important; */
@@ -82,10 +46,10 @@
 
   background: linear-gradient(
     49.73deg,
-    rgba(0, 25, 255, 0.27) 27.63%,
-    rgba(205, 31, 31, 0.27) 73.88%
+    var(--blue_03) 27.63%,
+    var(--red_03) 73.88%
   );
-  box-shadow: inset 0px 0px 100px 10px rgba(0, 26, 255, 0.24);
+  box-shadow: inset 0px 0px 100px 10px var(--blue_03);
   border-radius: 22px;
   border: 2px solid;
 }

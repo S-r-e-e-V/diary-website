@@ -28,6 +28,14 @@ export default function Menu() {
       </span>
       <span
         onClick={() => {
+          navigate("/themes");
+          setisopenMenu(false);
+        }}
+      >
+        Theme
+      </span>
+      <span
+        onClick={() => {
           logout();
           setisAuthenticated(false);
           setisopenMenu(false);

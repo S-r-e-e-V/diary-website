@@ -68,9 +68,9 @@ export default function ForgetPassword() {
     return error;
   };
   return (
-    <div className="signup">
+    <div className="forget">
       <RingLoading loading={loading} />
-      <form className="signup-container">
+      <form className="forget-container">
         <div className="input-container">
           <input
             className={`input ${error.username ? "input-error" : ""}`}

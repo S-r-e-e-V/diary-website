@@ -7,10 +7,12 @@ import Home from "../screens/Home";
 import Login from "../screens/Login";
 import Signup from "../screens/Signup";
 import NoResult from "../components/NoResult";
+import ForgetPassword from "../screens/ForgetPassword";
+import Theme from "../components/Themes";
+import ThemeController from "../components/ThemeController";
 
 // context
 import { AuthContext } from "../context/AuthContext";
-import ForgetPassword from "../screens/ForgetPassword";
 
 // utils
 import { useMediaQuery } from "../utils/mediaQueries";
@@ -25,9 +27,11 @@ export default function Router() {
   let isMobileView = useMediaQuery("(max-width: 600px)");
   return (
     <BrowserRouter>
+      <ThemeController />
       <Menu />
       {isAuthenticated ? (
         <Routes>
+          <Route exact path="/themes" element={<Theme />} />
           <Route
             exact
             path="/modify"

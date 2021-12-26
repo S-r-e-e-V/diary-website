@@ -6,7 +6,7 @@ import { AuthContextProvider } from "./context/AuthContext";
 
 function App() {
   return (
-    <div className="app">
+    <div className={`app`}>
       <AuthContextProvider>
         <AppContextProvider>
           <Routes />

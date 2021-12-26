@@ -1,10 +1,88 @@
 :root {
-  --black: #000000;
-  --red: rgb(173, 7, 7);
-  --lightBlack: #4f4f4f;
   --white: #ffffff;
+  --white_006: #e1ffff0f;
+  --white_03: #e1ffff4d;
+  --white_07: #e1ffffb3;
+
+  --black: #000000;
+  --black_02: #00000033;
+  --black_006: #0000000f;
+  --lightBlack: #4f4f4f;
   --lightGray: #e6e6e6;
+  --gray: #838383;
+
+  --red: #ad0707;
+  --lightRed: #ffcdcd;
+  --red_01: #ff00001a;
+  --red_03: #ff000033;
+  --blackRed_08: #250000cc;
+  --mediumRed_05: #c75f5f74;
+
   --blue: #001aff;
+  --lightBlue: #adb5ff;
+  --blue_01: #0000ff1a;
+  --blue_03: #0000ff33;
+  --blackBlue_08: #030020cc;
+  --mediumBlue_05: #452ed274;
+
+  --font: sans-serif;
+}
+.mysterious-night {
+  --white: #ffffff;
+  --white_006: #e1ffff0f;
+  --white_03: #e1ffff4d;
+  --white_07: #e1ffffb3;
+
+  --black: #000000;
+  --black_02: #00000033;
+  --black_006: #0000000f;
+  --lightBlack: #c7c7c7;
+  --lightGray: #e6e6e6;
+  --gray: #838383;
+
+  --red: #ad0707;
+  --lightRed: #ffcdcd;
+  --red_01: #ff000033;
+  --red_03: #ff000033;
+  --blackRed_08: #250000cc;
+  --mediumRed_05: #c75f5f74;
+
+  --blue: #001aff;
+  --lightBlue: #adb5ff;
+  --blue_01: #0000ff33;
+  --blue_03: #0000ff33;
+  --blackBlue_08: #030020cc;
+  --mediumBlue_05: #452ed274;
+
+  --font: sans-serif;
+}
+.default {
+  --white: #ffffff;
+  --white_006: #e1ffff0f;
+  --white_03: #e1ffff4d;
+  --white_07: #e1ffffb3;
+
+  --black: #000000;
+  --black_02: #00000033;
+  --black_006: #0000000f;
+  --lightBlack: #4f4f4f;
+  --lightGray: #e6e6e6;
+  --gray: #838383;
+
+  --red: #ad0707;
+  --lightRed: #ffcdcd;
+  --red_01: #ff00001a;
+  --red_03: #ff000033;
+  --blackRed_08: #250000cc;
+  --mediumRed_05: #c75f5f74;
+
+  --blue: #001aff;
+  --lightBlue: #adb5ff;
+  --blue_01: #0000ff1a;
+  --blue_03: #0000ff33;
+  --blackBlue_08: #030020cc;
+  --mediumBlue_05: #452ed274;
+
   --font: sans-serif;
 }
 .app {
@@ -12,12 +90,7 @@
   color: var(--white);
 
   min-height: 100vh;
-  background: linear-gradient(
-    72.44deg,
-    rgba(255, 0, 0, 0.18) 0%,
-    rgba(0, 26, 255, 0.3) 99.98%
-  );
-  mix-blend-mode: normal;
   padding: 10px;
   box-sizing: border-box;
+  mix-blend-mode: normal;
 }

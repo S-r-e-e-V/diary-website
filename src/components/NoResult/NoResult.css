@@ -10,8 +10,8 @@
   font-size: 500px;
   background: linear-gradient(
     49.73deg,
-    rgba(0, 25, 255, 0.27) 27.63%,
-    rgba(205, 31, 31, 0.27) 73.88%
+    var(--blue_03) 27.63%,
+    var(--red_03) 73.88%
   );
   background-clip: text;
   -webkit-background-clip: text;

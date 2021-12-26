@@ -14,10 +14,10 @@
 
   background: linear-gradient(
     49.73deg,
-    rgba(0, 25, 255, 0.27) 27.63%,
-    rgba(205, 31, 31, 0.27) 73.88%
+    var(--blue_03) 27.63%,
+    var(--red_03) 73.88%
   );
-  box-shadow: inset 0px 0px 100px 10px rgba(0, 26, 255, 0.24);
+  box-shadow: inset 0px 0px 100px 10px var(--blue_03);
   border-radius: 22px;
   border: 2px solid;
 
@@ -41,8 +41,8 @@
   margin: 5px;
   background: linear-gradient(
     89.1deg,
-    rgba(69, 46, 210, 0.456) 0%,
-    rgba(199, 95, 95, 0.456) 100%
+    var(--mediumBlue_05),
+    var(--mediumRed_05)
   );
   border-radius: 10px;
 }
@@ -50,8 +50,8 @@
   padding: 3px 10px;
   background: linear-gradient(
     89.1deg,
-    rgba(69, 46, 210, 0.456) 0%,
-    rgba(199, 95, 95, 0.456) 100%
+    var(--mediumBlue_05),
+    var(--mediumRed_05)
   );
   border-radius: 10px;
 }
@@ -69,8 +69,8 @@
 
   background: radial-gradient(
     50% 50% at 50% 50%,
-    rgba(199, 95, 95, 0.456) 0%,
-    rgba(0, 26, 255, 0.228) 100%
+    var(--red_03),
+    var(--blue_03)
   );
 }
 .add-diary .ql-toolbar .ql-formats svg > * {
@@ -88,10 +88,10 @@
 
   background: linear-gradient(
     49.73deg,
-    rgba(0, 25, 255, 0.27) 27.63%,
-    rgba(205, 31, 31, 0.27) 73.88%
+    var(--blue_03) 27.63%,
+    var(--red_03) 73.88%
   );
-  box-shadow: inset 0px 0px 100px 10px rgba(0, 26, 255, 0.24);
+  box-shadow: inset 0px 0px 100px 10px var(--blue_03);
   border-radius: 22px;
   border: 2px solid;
 }

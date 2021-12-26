@@ -26,8 +26,6 @@ export default function Header({
 }) {
   const navigate = useNavigate();
   const { isopenMenu, setisopenMenu } = useContext(AppContext);
-  // const [startDate, setStartDate] = useState(new Date());
-  // const [endDate, setendDate] = useState(new Date());
 
   //  custom datepicker
   const CustomDatepicker = forwardRef(({ value, onClick }, ref) => (

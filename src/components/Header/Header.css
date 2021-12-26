@@ -17,9 +17,9 @@
   margin-right: 10px;
   border-radius: 10px;
   background: linear-gradient(
-    49.73deg,
-    rgba(0, 25, 255, 0.27) 27.63%,
-    rgba(205, 31, 31, 0.27) 73.88%
+    89.1deg,
+    var(--mediumBlue_05),
+    var(--mediumRed_05)
   );
 }
 .header .date {
@@ -56,8 +56,8 @@
 
   background: radial-gradient(
     50% 50% at 50% 50%,
-    rgba(199, 95, 95, 0.456) 0%,
-    rgba(0, 26, 255, 0.228) 100%
+    var(--red_03),
+    var(--blue_03)
   );
 }
 /* .header .circle.bold {
@@ -105,7 +105,7 @@
   padding: 6px;
   background: linear-gradient(
     49.73deg,
-    rgba(0, 25, 255, 0.27) 27.63%,
-    rgba(205, 31, 31, 0.27) 73.88%
+    var(--blue_03) 27.63%,
+    var(--red_03) 73.88%
   );
 }

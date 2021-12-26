@@ -12,8 +12,8 @@
 
   background: linear-gradient(
     72.44deg,
-    rgba(37, 0, 0, 0.788),
-    rgba(3, 0, 32, 0.788)
+    var(--blackRed_08),
+    var(--blackBlue_08)
   );
   mix-blend-mode: normal;
 
@@ -31,5 +31,5 @@
 }
 .menu > span:hover {
   opacity: 1;
-  text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.7);
+  text-shadow: 0px 0px 7px var(--white_07);
 }
