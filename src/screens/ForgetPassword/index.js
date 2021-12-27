@@ -81,6 +81,9 @@ export default function ForgetPassword() {
                 username: e.target.value.trim(),
               })
             }
+            onKeyUp={(e) =>
+              (e.KeyCode === 13 || e.which === 13) && handleSubmit()
+            }
           />
           <span className="error">{error.username}</span>
         </div>
@@ -94,6 +97,9 @@ export default function ForgetPassword() {
                 ...credentials,
                 password: e.target.value.trim(),
               })
+            }
+            onKeyUp={(e) =>
+              (e.KeyCode === 13 || e.which === 13) && handleSubmit()
             }
           />
           <span className="error">{error.password}</span>
@@ -109,11 +115,14 @@ export default function ForgetPassword() {
                 confirm_password: e.target.value.trim(),
               })
             }
+            onKeyUp={(e) =>
+              (e.KeyCode === 13 || e.which === 13) && handleSubmit()
+            }
           />
           <span className="error">{error.confirm_password}</span>
         </div>
         <button onClick={() => handleSubmit()} type="button">
-          Update new password
+          Update password
         </button>
       </form>
     </div>

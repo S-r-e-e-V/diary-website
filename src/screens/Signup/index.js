@@ -85,6 +85,9 @@ export default function Signup() {
             onChange={(e) =>
               setcredentials({ ...credentials, name: e.target.value.trim() })
             }
+            onKeyUp={(e) =>
+              (e.KeyCode === 13 || e.which === 13) && handleSubmit()
+            }
           />
           <span className="error">{error.name}</span>
         </div>
@@ -99,6 +102,9 @@ export default function Signup() {
                 username: e.target.value.trim(),
               })
             }
+            onKeyUp={(e) =>
+              (e.KeyCode === 13 || e.which === 13) && handleSubmit()
+            }
           />
           <span className="error">{error.username}</span>
         </div>
@@ -109,6 +115,9 @@ export default function Signup() {
             placeholder="phone(optional)"
             onChange={(e) =>
               setcredentials({ ...credentials, phone: e.target.value.trim() })
+            }
+            onKeyUp={(e) =>
+              (e.KeyCode === 13 || e.which === 13) && handleSubmit()
             }
           />
           <span className="error">{error.phone}</span>
@@ -123,6 +132,9 @@ export default function Signup() {
                 ...credentials,
                 password: e.target.value.trim(),
               })
+            }
+            onKeyUp={(e) =>
+              (e.KeyCode === 13 || e.which === 13) && handleSubmit()
             }
           />
           <span className="error">{error.password}</span>

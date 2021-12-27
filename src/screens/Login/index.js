@@ -69,6 +69,9 @@ export default function Login() {
                 username: e.target.value.trim(),
               })
             }
+            onKeyUp={(e) =>
+              (e.KeyCode === 13 || e.which === 13) && handleSubmit()
+            }
           />
           <span className="error">{error.username}</span>
         </div>
@@ -81,6 +84,9 @@ export default function Login() {
                 ...credentials,
                 password: e.target.value.trim(),
               })
+            }
+            onKeyUp={(e) =>
+              (e.KeyCode === 13 || e.which === 13) && handleSubmit()
             }
           />
           <span className="error">{error.password}</span>
