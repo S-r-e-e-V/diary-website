@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import "./ThemeController.css";
 
 // context
@@ -6,6 +6,10 @@ import { AppContext } from "../../context/AppContext";
 
 export default function ThemeController() {
   const { theme } = useContext(AppContext);
+
+  useEffect(() => {
+    document.documentElement.className = theme;
+  }, []);
 
   if (theme === "mysterious-night") {
     return (
