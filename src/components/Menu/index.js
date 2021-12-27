@@ -32,7 +32,7 @@ export default function Menu() {
           setisopenMenu(false);
         }}
       >
-        Theme
+        Themes
       </span>
       <span
         onClick={() => {
