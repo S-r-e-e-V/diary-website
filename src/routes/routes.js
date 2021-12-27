@@ -24,7 +24,7 @@ export default function Router() {
     : setisAuthenticated(false);
 
   // media query
-  let isMobileView = useMediaQuery("(max-width: 600px)");
+  let isMobileView = useMediaQuery("(max-width: 620px)");
   return (
     <BrowserRouter>
       <ThemeController />

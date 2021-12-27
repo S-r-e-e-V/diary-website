@@ -1,6 +1,7 @@
 .header {
   display: flex;
   justify-content: space-between;
+  padding: 10px;
 }
 .header .menu-icon {
   cursor: pointer;
@@ -97,6 +98,7 @@
   width: unset;
 }
 .header .react-datepicker-wrapper button {
+  cursor: pointer;
   outline: none;
   border: none;
   font-weight: 600;

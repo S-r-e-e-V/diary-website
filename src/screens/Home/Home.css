@@ -1,10 +1,12 @@
 .home {
-  display: flex;
-  flex-direction: column;
+  height: calc(100vh - 51px);
+  overflow-y: scroll;
+  /* height: calc(100vh - 51px);
+  overflow-y: scroll; */
 }
 .home .cards {
   display: grid;
-  padding-top: 20px;
+  padding: 10px;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
   justify-items: center;

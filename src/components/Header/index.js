@@ -68,6 +68,7 @@ export default function Header({
             <img src={Images.plus_icon} />
           </div>
           <DatePicker
+            className="date-picker"
             selected={setDate.startDate}
             onChange={(dates) => {
               const [start, end] = dates;

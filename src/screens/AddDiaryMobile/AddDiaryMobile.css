@@ -1,6 +1,7 @@
 .add-diary-mobile {
   display: flex;
   flex-direction: column;
+  padding: 10px;
 }
 .add-diary-mobile .container {
   margin-top: 20px;
@@ -41,7 +42,7 @@
 }
 /* react-quill */
 .add-diary-mobile .container .ql-container {
-  height: calc(100vh - 132px);
+  height: calc(100vh - 91px);
   outline: none;
 
   background: linear-gradient(

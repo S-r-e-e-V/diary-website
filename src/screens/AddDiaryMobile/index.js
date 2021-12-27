@@ -93,7 +93,7 @@ export default function AddDiaryMobile() {
   // };
   // console.log(body);
   return (
-    <div className="add-diary-mobile">
+    <>
       <RingLoading loading={loading} />
       <Header
         page={isHideTools ? "edit" : "add-mobile"}
@@ -102,9 +102,10 @@ export default function AddDiaryMobile() {
         edit={() => setisHideTools(false)}
         onSearch={onSearch}
       />
-      <EditorToolbar isHideTools={isHideTools} />
-      <div className="container">
-        {/* <div
+      <div className="add-diary-mobile">
+        <EditorToolbar isHideTools={isHideTools} />
+        <div className="container">
+          {/* <div
           className="textarea"
           contentEditable={true}
           ref={textArea}
@@ -112,17 +113,18 @@ export default function AddDiaryMobile() {
           suppressContentEditableWarning={true}
           dangerouslySetInnerHTML={{ __html: body }}
         /> */}
-        <ReactQuill
-          readOnly={isHideTools}
-          placeholder="Start your diary"
-          value={body}
-          onChange={(e) => setbody(e)}
-          modules={modules}
-          // formats={formats}
-          theme={"bubble"}
-        />
+          <ReactQuill
+            readOnly={isHideTools}
+            placeholder="Start your diary"
+            value={body}
+            onChange={(e) => setbody(e)}
+            modules={modules}
+            // formats={formats}
+            theme={"bubble"}
+          />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 // const modules = {

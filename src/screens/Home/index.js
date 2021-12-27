@@ -55,22 +55,24 @@ export default function Home() {
   //   );
   // };
   return (
-    <div className="home">
+    <>
       <RingLoading loading={loading} />
       <Header
         page="home"
         setDate={date}
         selectedDate={(date) => setdate(date)}
       />
-      <div className="cards">
-        {diary?.list?.map((item, index) => (
-          <Card
-            id={item._id}
-            date={moment(item.date).format("YYYY-MM-DD")}
-            text={item.content}
-          />
-        ))}
+      <div className="home">
+        <div className="cards">
+          {diary?.list?.map((item, index) => (
+            <Card
+              id={item._id}
+              date={moment(item.date).format("YYYY-MM-DD")}
+              text={item.content}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 }

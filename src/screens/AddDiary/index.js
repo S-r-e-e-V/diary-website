@@ -93,7 +93,7 @@ export default function AddDiary() {
   // };
   // console.log(body);
   return (
-    <div className="add-diary">
+    <>
       <RingLoading loading={loading} />
       <Header
         page={isHideTools ? "edit" : "add"}
@@ -101,9 +101,10 @@ export default function AddDiary() {
         edit={() => setisHideTools(false)}
         onSearch={onSearch}
       />
-      <EditorToolbar Save={Save} isHideTools={isHideTools} />
-      <div className="container">
-        {/* <div
+      <div className="add-diary">
+        <EditorToolbar Save={Save} isHideTools={isHideTools} />
+        <div className={`container ${!isHideTools && "edit"}`}>
+          {/* <div
           className="textarea"
           contentEditable={true}
           ref={textArea}
@@ -111,17 +112,18 @@ export default function AddDiary() {
           suppressContentEditableWarning={true}
           dangerouslySetInnerHTML={{ __html: body }}
         /> */}
-        <ReactQuill
-          readOnly={isHideTools}
-          placeholder="Start your diary"
-          value={body}
-          onChange={(e) => setbody(e)}
-          modules={modules}
-          // formats={formats}
-          theme={"snow"}
-        />
+          <ReactQuill
+            readOnly={isHideTools}
+            placeholder="Start your diary"
+            value={body}
+            onChange={(e) => setbody(e)}
+            modules={modules}
+            // formats={formats}
+            theme={"snow"}
+          />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 // const modules = {
