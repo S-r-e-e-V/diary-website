@@ -97,7 +97,7 @@ export default function AddDiary() {
       <RingLoading loading={loading} />
       <Header
         page={isHideTools ? "edit" : "add"}
-        date={moment(diary?.date).format("YYYY-MM-DD")}
+        date={moment(diary?.date).format("DD/MM/YYYY")}
         edit={() => setisHideTools(false)}
         onSearch={onSearch}
       />

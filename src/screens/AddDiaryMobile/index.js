@@ -98,7 +98,7 @@ export default function AddDiaryMobile() {
       <Header
         page={isHideTools ? "edit" : "add-mobile"}
         save={Save}
-        date={moment(diary?.date).format("YYYY-MM-DD")}
+        date={moment(diary?.date).format("DD/MM/YYYY")}
         edit={() => setisHideTools(false)}
         onSearch={onSearch}
       />

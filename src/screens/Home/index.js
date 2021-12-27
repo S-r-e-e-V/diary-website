@@ -67,7 +67,7 @@ export default function Home() {
           {diary?.list?.map((item, index) => (
             <Card
               id={item._id}
-              date={moment(item.date).format("YYYY-MM-DD")}
+              date={moment(item.date).format("DD/MM/YYYY")}
               text={item.content}
             />
           ))}
