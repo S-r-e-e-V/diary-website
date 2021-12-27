@@ -7,6 +7,16 @@ import { AppContext } from "../../context/AppContext";
 export default function ThemeController() {
   const { theme } = useContext(AppContext);
 
+  const viewPort = () => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", viewPort);
+    return () => window.removeEventListener("resize", viewPort);
+  }, []);
+
   useEffect(() => {
     document.documentElement.className = theme;
   }, []);
