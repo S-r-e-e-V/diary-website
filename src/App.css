@@ -17,14 +17,14 @@
   --red_01: #ff00001a;
   --red_03: #ff000033;
   --blackRed_08: #250000cc;
-  --mediumRed_05: #c75f5f74;
+  --mediumRed_05: #c93d3d66;
 
   --blue: #001aff;
   --lightBlue: #adb5ff;
   --blue_01: #0000ff1a;
   --blue_03: #0000ff33;
   --blackBlue_08: #030020cc;
-  --mediumBlue_05: #452ed274;
+  --mediumBlue_05: #5c48da75;
 
   --font: sans-serif;
 }
@@ -33,8 +33,10 @@
   --lightBlack_02: #c7c7c780;
 
   --red_01: #ff000033;
+  --red_03: #ff000033;
 
   --blue_01: #0000ff33;
+  --blue_03: #0000ff33;
 }
 .default {
   --lightBlack: #4f4f4f;

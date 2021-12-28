@@ -6,7 +6,7 @@
 .add-diary .container {
   margin-top: 20px;
 }
-.add-diary .container .textarea {
+/* .add-diary .container .textarea {
   width: 100%;
   box-sizing: border-box;
   outline: none;
@@ -26,7 +26,7 @@
   font-size: 20px;
   line-height: 23px;
   color: var(--white);
-}
+} */
 /* toolbar */
 .add-diary .ql-toolbar {
   border: none !important;
@@ -54,6 +54,7 @@
     var(--mediumRed_05)
   );
   border-radius: 10px;
+  color: var(--lightBlack);
 }
 .add-diary .ql-toolbar .ql-formats > button,
 .add-diary .ql-toolbar .ql-formats .ql-align,
@@ -69,10 +70,11 @@
 
   background: radial-gradient(
     50% 50% at 50% 50%,
-    var(--red_03),
-    var(--blue_03)
+    var(--mediumRed_05),
+    var(--mediumBlue_05)
   );
 }
+
 .add-diary .ql-toolbar .ql-formats svg > * {
   /* stroke: var(--white) !important; */
   /* fill: var(--white) !important; */
@@ -81,6 +83,20 @@
   /* stroke: var(--blue); */
 }
 
+/* svg color */
+.ql-snow .ql-stroke {
+  stroke: var(--lightBlack) !important;
+}
+.ql-snow .ql-fill,
+.ql-snow .ql-stroke.ql-fill {
+  fill: var(--lightBlack) !important;
+}
+.ql-snow .ql-transparent {
+  opacity: 1 !important;
+}
+.add-diary .ql-toolbar .ql-formats > span > span {
+  color: var(--lightBlack);
+}
 /* react-quill */
 .add-diary .container .ql-container {
   height: calc(100vh - 91px);
@@ -94,6 +110,9 @@
   box-shadow: inset 0px 0px 100px 10px var(--blue_03);
   border-radius: 22px;
   border: 2px solid;
+}
+.ql-editor.ql-blank::before {
+  color: var(--lightBlack) !important;
 }
 .add-diary .container.edit .ql-container {
   height: calc(100vh - 176px);

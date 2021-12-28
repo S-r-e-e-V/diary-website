@@ -6,9 +6,8 @@
 .add-diary-mobile .container {
   margin-top: 20px;
 }
-.add-diary-mobile .container .textarea {
+/* .add-diary-mobile .container .textarea {
   width: 100%;
-  height: calc(100vh - 75px);
   box-sizing: border-box;
   outline: none;
   padding: 20px;
@@ -27,7 +26,7 @@
   font-size: 20px;
   line-height: 23px;
   color: var(--white);
-}
+} */
 /* toolbar */
 .add-diary-mobile .ql-toolbar .ql-formats svg > * {
   /* stroke: var(--white) !important; */
