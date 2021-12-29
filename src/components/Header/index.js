@@ -59,6 +59,7 @@ export default function Header({
           <div className="circle" onClick={edit}>
             <img src={Images.edit_icon} />
           </div>
+          <div className="date">{date}</div>
           {/* <Search placeholder="Search..." onSearch={onSearch} /> */}
         </div>
       )}
