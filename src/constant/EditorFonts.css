@@ -1,0 +1,84 @@
+/* Set dropdown font-families */
+.ql-font span[data-label="Arial"]::before {
+  font-family: "Arial";
+}
+.ql-font .ql-font span[data-label="Raleway"]::before {
+  font-family: "Raleway";
+}
+.ql-font span[data-label="Roboto"]::before {
+  font-family: "Roboto" !important;
+}
+
+.ql-font span[data-label="Ayuthaya"]::before {
+  font-family: "Ayuthaya";
+}
+.ql-font .ql-font span[data-label="Bradley Hand"]::before {
+  font-family: "Bradley Hand";
+}
+.ql-font span[data-label="Chalkduster"]::before {
+  font-family: "Chalkduster";
+}
+.ql-font span[data-label="Snell Roundhand"]::before {
+  font-family: "Snell Roundhand";
+}
+.ql-font .ql-font span[data-label="Trattatello"]::before {
+  font-family: "Trattatello";
+}
+.ql-font span[data-label="monospace"]::before {
+  font-family: "monospace";
+}
+
+.ql-font span[data-label="comic-sans"]::before {
+  font-family: "comic-sans";
+}
+.ql-font span[data-label="courier-new"]::before {
+  font-family: "courier-new";
+}
+.ql-font span[data-label="Georgia"]::before {
+  font-family: "Georgia";
+}
+.ql-font span[data-label="lucida"]::before {
+  font-family: "lucida";
+}
+
+/* Set content font-families */
+.ql-font-Arial {
+  font-family: "Arial";
+}
+.ql-font-Roboto {
+  font-family: "Roboto";
+}
+.ql-font-Raleway {
+  font-family: "Raleway";
+}
+.ql-font-Ayuthaya {
+  font-family: "Ayuthaya";
+}
+.ql-font-Bradley-Hand {
+  font-family: "Bradley Hand";
+}
+.ql-font-Chalkduster {
+  font-family: "Chalkduster";
+}
+.ql-font-Snell-Roundhand {
+  font-family: "Snell Roundhand";
+}
+.ql-font-Trattatello {
+  font-family: "Trattatello";
+}
+.ql-font-monospace {
+  font-family: "monospace";
+}
+
+.ql-font-comic-sans {
+  font-family: "comic-sans";
+}
+.ql-font-courier-new {
+  font-family: "courier-new";
+}
+.ql-font-Georgia {
+  font-family: "Georgia";
+}
+.ql-font-lucida {
+  font-family: "lucida";
+}

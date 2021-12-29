@@ -1,5 +1,6 @@
 import React from "react";
 import { Quill } from "react-quill";
+import "../constant/EditorFonts.css";
 
 // Custom Undo button icon component for Quill editor. You can import it directly
 // from 'quill/assets/icons/undo.svg' but I found that a number of loaders do not
@@ -33,19 +34,30 @@ function redoChange() {
   this.quill.history.redo();
 }
 
-// Add sizes to whitelist and register them
-const Size = Quill.import("formats/size");
-Size.whitelist = ["extra-small", "small", "medium", "large"];
-Quill.register(Size, true);
-
 // Add fonts to whitelist and register them
 const Font = Quill.import("formats/font");
+// Font.whitelist = [
+//   "arial",
+//   "Roboto",
+//   "comic-sans",
+//   "courier-new",
+//   "georgia",
+//   "helvetica",
+//   "lucida",
+// ];
 Font.whitelist = [
-  "arial",
+  "Arial",
+  "Roboto",
+  "Raleway",
+  "Ayuthaya",
+  "Bradley-Hand",
+  "Chalkduster",
+  "Snell-Roundhand",
+  "Trattatello",
+  "monospace",
   "comic-sans",
   "courier-new",
-  "georgia",
-  "helvetica",
+  "Georgia",
   "lucida",
 ];
 Quill.register(Font, true);
@@ -96,11 +108,18 @@ export const QuillToolbar = ({ Save, isHideTools }) => (
   >
     <span className="ql-formats">
       <select className="ql-font" defaultValue="arial">
-        <option value="arial">Arial</option>
+        <option value="Arial">Arial</option>
+        <option value="Roboto">Roboto</option>
+        <option value="Raleway">Raleway</option>
+        <option value="Ayuthaya">Ayuthaya</option>
+        <option value="Bradley-Hand">Bradley Hand</option>
+        <option value="Chalkduster">Chalkduster</option>
+        <option value="Snell-Roundhand">Snell Roundhand</option>
+        <option value="Trattatello">Trattatello</option>
+        <option value="monospace">monospace</option>
         <option value="comic-sans">Comic Sans</option>
         <option value="courier-new">Courier New</option>
-        <option value="georgia">Georgia</option>
-        <option value="helvetica">Helvetica</option>
+        <option value="Georgia">Georgia</option>
         <option value="lucida">Lucida</option>
       </select>
       <select className="ql-size" defaultValue="medium">
